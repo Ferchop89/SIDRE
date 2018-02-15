@@ -12,14 +12,14 @@
     <title>Sistema de Reinscripciones - ENP2</title>
     <!-- /Sección: Title del Sitio -->
     <!-- Sección: Links -->
-    <link href="images/favunam.ico" rel="shortcut icon" type="image/x-icon">
-    <link href="images/custom_icon.png" rel="apple-touch-icon">
-    <link href="images/custom_icon.png" sizes="150x150" rel="icon">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/responsive_parallax_navbar.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/mdb.css" rel="stylesheet">
-    <link href="css/estilo_simapp_enp2.css" rel="stylesheet">
+    <link href="{{ asset ('images/favunam.ico') }}" rel="shortcut icon" type="image/x-icon">
+    <link href="{{ asset ('images/custom_icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset ('images/custom_icon.png') }}" sizes="150x150" rel="icon">
+    <link href="{{ asset ('css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ asset ('css/responsive_parallax_navbar.css') }}" rel="stylesheet">
+    <link href="{{ asset ('css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset ('css/mdb.css" rel="stylesheet') }}">
+    <link href="{{ asset ('css/estilo_simapp_enp2.css') }}" rel="stylesheet">
 </head>
 
 <body id="inicio">
@@ -75,22 +75,22 @@
                     <div class="big-logo">
                         <div class="pull-left logo_grande logo_der">
                             <a href="https://www.unam.mx/" title="UNAM" tabindex="-1">
-                                <img src="images/escudo_unam_completo.svg">
+                                <img src="{{ asset ('images/escudo_unam_completo.svg') }}">
                             </a>
                         </div>
                         <div class="pull-left logo_chico logo_der">
                             <a href="https://www.unam.mx/" title="UNAM" tabindex="-1">
-                                <img src="images/escudo_unam_solo.svg">
+                                <img src="{{ asset ('images/escudo_unam_solo.svg') }}">
                             </a>
                         </div>
                         <div class="pull-right logo_grande logo_izq">
                             <a href="" title="ENP2" tabindex="-1">
-                                <img src="images/escudo_enp2_completo.png">
+                                <img src="{{ asset ('images/escudo_enp2_completo.png') }}">
                             </a>
                         </div>
                         <div class="pull-right logo_chico logo_izq">
                             <a href="" title="ENP2" tabindex="-1">
-                                <img src="images/escudo_enp2_solo.png">
+                                <img src="{{ asset ('images/escudo_enp2_solo.png') }}">
                             </a>
                         </div>
                     </div>
@@ -100,6 +100,7 @@
     </nav>
     <main id="maincontent" role="main" class="clearfix">
         <!-- Sección: Principal -->
+    @yield('content')
 
         <!-- /Sección: Principal -->
     </main>
@@ -133,7 +134,7 @@
                     <br>Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, requiere permiso previo por escrito de la institución
                     <br>
                     </p><div style="float: center;">
-                        <img src="images/logo_responsivo.png" alt="Sitio Responsivo" height="42" width="42" style="margin-top:-24px;"> &nbsp;
+                        <img src="{{ asset ('images/logo_responsivo.png') }}" alt="Sitio Responsivo" height="42" width="42" style="margin-top:-24px;"> &nbsp;
                         <span class="fa fa-universal-access" style="font-size:42px;"></span>
                     </div>
                     <br>Sitio web administrado por: Escuela Nacional Preparatoria Plantel 2<p></p>
@@ -142,17 +143,17 @@
     </footer>
     <!-- Sección: Scripts -->
     <!-- jQuery -->
-    <script src="js/jquery.js" type="text/javascript"></script> 
+    <script src="{{ asset ('js/jquery.js') }}" type="text/javascript"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="{{ asset ('js/bootstrap.js') }}"></script>
     <!-- Material Design Bootstrap -->
-    <script type="text/javascript" src="assets/js/mdb.js"></script>
+    <script type="text/javascript" src="{{ asset ('js/mdb.js') }}"></script>
     <!-- Analytics -->
     <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="assets/js/jquery.js"></script>
-    <script type="text/javascript" src="assets/js/analytics.js"></script>
+    <script type="text/javascript" src="{{ asset ('js/analytics.js') }}"></script>
     <!-- barra de navegación-->
-    <script type="text/javascript" src="assets/js/navbar.js"></script>
+    <script type="text/javascript" src="{{ asset ('js/navbar.js') }}"></script>
     <!-- /Sección: Scripts -->
 
 
