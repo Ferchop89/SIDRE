@@ -1,0 +1,49 @@
+.login-form .input-group-addon{
+  margin: 0;
+  padding: 0;
+}
+
+.login-form .icon-uno{
+  width: 34px;
+  height: 32px;
+  background-image: url("../images/login.png");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+}
+.login-form .icon-dos{
+  width: 34px;
+  height: 32px;
+  background-image: url("../images/pass.png");
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+}
+div#btn-submit {
+    width: 35%;
+    display: inline-block;
+}
+.btn-blue, .btn-blue:focus {
+  background-color: #1891d5;
+  border: 0;
+  box-shadow: none;
+  color: #fff;
+  font-family: 'Source Sans Pro',sans-serif;
+  font-size: 15px;
+  height: 34px;
+  min-width: 90px;
+  margin: 2px;
+  overflow: hidden;
+  padding: 0 12px;
+  border-radius: 28px;
+}
+.btn-link{
+  margin: 0;
+  padding: 0;
+  background-color: white !important;
+  text-decoration: none;
+  box-shadow: none;
+  display: inline-block;
+  float: right;
+}
+.btn-link:hover{
+  text-decoration: none;
+}

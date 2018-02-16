@@ -17,9 +17,9 @@
     <link href="{{ asset ('images/custom_icon.png') }}" sizes="150x150" rel="icon">
     <link href="{{ asset ('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset ('css/responsive_parallax_navbar.css') }}" rel="stylesheet">
-    <link href="{{ asset ('css/font-awesome.css') }}" rel="stylesheet">
     <link href="{{ asset ('css/mdb.css" rel="stylesheet') }}">
     <link href="{{ asset ('css/estilo_simapp_enp2.css') }}" rel="stylesheet">
+    @yield('add_css')
 </head>
 
 <body id="inicio">
@@ -150,8 +150,8 @@
     <!-- Material Design Bootstrap -->
     <script type="text/javascript" src="{{ asset ('js/mdb.js') }}"></script>
     <!-- Analytics -->
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="assets/js/jquery.js"></script>
-    <script type="text/javascript" src="{{ asset ('js/analytics.js') }}"></script>
+    {{-- <script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="{{ asset ('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset ('js/analytics.js') }}"></script> --}}
     <!-- barra de navegación-->
     <script type="text/javascript" src="{{ asset ('js/navbar.js') }}"></script>
     <!-- /Sección: Scripts -->

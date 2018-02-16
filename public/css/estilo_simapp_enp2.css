@@ -1027,9 +1027,6 @@ input[type=date] {
   margin : 15px;
 }
 
-.btn-link {
-  background-color : #ccc !important;
-}
 
 .btn-link:hover {
   background-color : #fff;
