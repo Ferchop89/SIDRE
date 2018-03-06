@@ -15,5 +15,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login', 'UserController@login');
-Route::get('/steps', 'UserController@steps');
+Route::get('/acceso', 'UserController@login');//Lista
+Route::get('/cambio-contraseña', 'UserController@PasswordGeneration');//Lista
+Route::get('/recuperacion-contraseña', 'UserController@PasswordRecovery');//Lista
+Route::get('/pasos', 'UserController@steps');//Lista
+Route::get('/actualizacion', 'UserController@DataUpdate'); //Lista
+Route::get('/formato-actualizacion', 'UserController@Format');
+Route::get('/adeudo', 'UserController@adeudo');//Lista
+Route::get('/cuestionario', 'UserController@Questionnaire');
+Route::get('/turno', 'UserController@ReregistrationShift');//Lista
+Route::get('/consulta', 'UserController@consulta');//Lista
+
+Route::get('/reinscripcion', 'UserController@ReregistrationShift');
+
+
+
+
+
+ Route::get('/prueba', 'UserController@pruebas');

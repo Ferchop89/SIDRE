@@ -19,6 +19,8 @@
     <link href="{{ asset ('css/responsive_parallax_navbar.css') }}" rel="stylesheet">
     <link href="{{ asset ('css/mdb.css" rel="stylesheet') }}">
     <link href="{{ asset ('css/estilo_simapp_enp2.css') }}" rel="stylesheet">
+    <script src="{{ asset ('js/jquery.js') }}" type="text/javascript"></script>
+
     @yield('add_css')
 </head>
 
@@ -118,7 +120,6 @@
                 <div class="col-sm-6">
                     <p class="pmenor" tabindex="0">Se brinda información de:
                         </p><ul tabindex="0">
-                            <li>Ingreso a Iniciación Universitaria</li>
                             <li>Ingreso a Licenciatura por Pase Reglamentado</li>
                             <li>Trámites y Servicios Escolares en general</li>
                             <li>Ubicación de dependencias de la UNAM</li>
@@ -130,21 +131,23 @@
         <div class="row" id="fondo">
             <div class="col-sm-12">
                 <p class="pmenor" tabindex="0">
-                    Hecho en México, Universidad Nacional Autónoma de México (UNAM), todos los derechos reservados 2009 - 2014.
+                    Hecho en México, Preparatoria 2 Erasmo Castellanos Quinto, todos los derechos reservados 2018.
                     <br>Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, requiere permiso previo por escrito de la institución
                     <br>
                     </p><div style="float: center;">
                         <img src="{{ asset ('images/logo_responsivo.png') }}" alt="Sitio Responsivo" height="42" width="42" style="margin-top:-24px;"> &nbsp;
                         <span class="fa fa-universal-access" style="font-size:42px;"></span>
                     </div>
-                    <br>Sitio web administrado por: Escuela Nacional Preparatoria Plantel 2<p></p>
+                    <br>Sitio web administrado por: Escuela Nacional Preparatoria Plantel 2</br>
+                    Correo de Contacto: inscripciones@prepa2.unam.mx</br>
             </div>
         </div>
     </footer>
     <!-- Sección: Scripts -->
     <!-- jQuery -->
-    <script src="{{ asset ('js/jquery.js') }}" type="text/javascript"></script>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    {{-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> --}}
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script type="text/javascript" src="{{ asset ('js/bootstrap.js') }}"></script>
     <!-- Material Design Bootstrap -->
